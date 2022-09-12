@@ -98,45 +98,12 @@ export const Frend = () => {
             </tr>
           </thead>
           <tbody className="">
-            {/* {transactions?.map((item, index) => (
-                <tr className="border-b bg-stone-100">
-                  <td className="px-6 py-2 border-2 border-black">{item?.id}</td>
-                  <td className="px-6 py-2 border-2 border-black">{item.buyer.name}</td>
-                  <td className="px-6 py-2 border-2 border-black">{item.buyer.address}</td>
-                  <td className="px-6 py-2 border-2 border-black">{item.buyer.codePost}</td>
-                  <td className="px-6 py-2 border-2 border-black">{item?.product?.name}</td>
-                  <td className="px-6 py-2 border-2 border-black">{item?.status}</td>
-                  <td className="items-center space-x-2 py-2 border-2 border-black">
-                      <button
-                        // onClick={()=> {
-                        //   handleEdit(item.id)
-                        // }}
-                        className="bg-red-500 text-white ml-4 font-bold hover:bg-red-700 py-1 w-24 rounded-xl focus:outline-none focus:shadow-outline"
-                      >
-                        Cencel
-                      </button>
-                    <button 
-                    // onClick={() => handleApprove(item.id)}
-                    className="bg-green-400 hover:bg-green-700 text-white font-bold py-1 w-24 rounded-xl focus:outline-none focus:shadow-outline" type="button">
-                      Approve
-                    </button>
-                  </td>
-                </tr>
-              ))} */}
             {data.map((item, index) => (
               <tr className="border bg-stone-100">
-                <td key={index} className="px-6 py-2 border-2 border-black">
-                  {item.id}
-                </td>
-                <td key={index} className="px-6 py-2 border-2 border-black">
-                  {item.name}
-                </td>
-                <td key={index} className="px-6 py-2 border-2 border-black">
-                  {item.gender}
-                </td>
-                <td key={index} className="px-6 py-2 border-2 border-black">
-                  {item.age}
-                </td>
+                <td className="px-6 py-2 border-2 border-black">{item.id}</td>
+                <td className="px-6 py-2 border-2 border-black">{item.name}</td>
+                <td className="px-6 py-2 border-2 border-black">{item.gender}</td>
+                <td className="px-6 py-2 border-2 border-black">{item.age}</td>
                 <td className=" flex-auto items-center justify-center space-x-2 py-2 border-2 border-black">
                   <button
                     onClick={() => {
